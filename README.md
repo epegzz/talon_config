@@ -1,9 +1,9 @@
-# My talon_config
+# My Talon config
 
 This is my own custom Talon config. Currently only used to support eye tracking 
 mouse control via keyboard shortcuts.
 
-##Current features:
+## Current features:
 
 - Enable mouse control via eye tracker (continuously move mouse to where you look at on the screen)
 
