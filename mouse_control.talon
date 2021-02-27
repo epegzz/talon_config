@@ -23,4 +23,4 @@ key(cmd-ctrl-alt-d):
 # Triggered via Karabiner Elements via: `Tab + Left Command + Backspace`
 # ---------------------------------------------------------------------
 key(cmd-ctrl-alt-backspace):
-    user.eye_tracker_sleep()
+    user.put_eye_tracker_to_sleep()
