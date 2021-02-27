@@ -38,12 +38,12 @@ class Actions:
             toggle_control(False)
             mouse_control_active = False
 
-    def mouse_move_current_gaze_position():
+    def move_mouse_to_current_gaze_position():
         """Moves the mouse to where you are currently looking at"""
         global eye_tracker_sleep_timer_delay
 
         schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
-        
+
         toggle_control(True)
         actions.sleep("100ms")
         toggle_control(False)

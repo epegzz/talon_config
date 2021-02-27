@@ -2,7 +2,7 @@
 # Triggered via Karabiner Elements via: `Tab + Left Command`
 # ---------------------------------------------------------------------
 key(cmd-ctrl-j):
-    user.mouse_move_current_gaze_position()
+    user.move_mouse_to_current_gaze_position()
 
 
 # Enable mouse control
