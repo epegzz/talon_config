@@ -5,13 +5,15 @@ mouse control via keyboard shortcuts.
 
 ## Current features:
 
-- Enable mouse control via eye tracker (continuously move mouse to where you look at on the screen)
+- Function to enable mouse control via eye tracker (continuously move mouse to where you look at on the screen)
 
-- Disable mouse control via eye tracker (stop updating mouse position)
+- Function to enable mouse control via eye tracker (stop updating mouse position)
 
-- Put the mouse to the position on the screen that you are looking at once
+- Function to put the mouse to the position on the screen that you are looking at once
 
-- Put eye tracker to sleep
+- Function to put eye tracker to sleep
+
+- Puts eye tracker to sleep automatically after 15 minutes
 
 ## Linux & Mac setup
 
