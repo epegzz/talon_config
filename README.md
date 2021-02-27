@@ -5,13 +5,22 @@ mouse control via keyboard shortcuts.
 
 ## Current features:
 
-- Function to enable mouse control via eye tracker (continuously move mouse to where you look at on the screen)
+- Function to enable mouse control via eye tracker (continuously move mouse to where you look at on the screen):
 
-- Function to enable mouse control via eye tracker (stop updating mouse position)
+  `user.start_mouse_control`
+  
 
-- Function to put the mouse to the position on the screen that you are looking at once
+- Function to enable mouse control via eye tracker (stop updating mouse position):
 
-- Function to put eye tracker to sleep
+  `user.stop_mouse_control`
+
+- Function to put the mouse to the position on the screen that you are looking at once:
+
+  `user.move_mouse_to_current_gaze_position`
+
+- Function to put eye tracker to sleep:
+
+  `user.put_eye_tracker_to_sleep`
 
 - Puts eye tracker to sleep automatically after 15 minutes
 
