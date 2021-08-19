@@ -8,19 +8,22 @@ key(cmd-ctrl-j):
 # Enable mouse control
 # Triggered via Karabiner Elements via: `Tab + Left Command (hold)`
 # ---------------------------------------------------------------------
-key(cmd-ctrl-alt-j):
+key(f13):
     user.start_mouse_control()
-
+key(cmd-f13):
+    user.start_mouse_control()    
 
 # Disable mouse control
 # Triggered via Karabiner Elements via: `Tab + Left Command (release)`
 # ---------------------------------------------------------------------
-key(cmd-ctrl-alt-d):
+key(f14):
+    user.stop_mouse_control()    
+key(cmd-f14):
     user.stop_mouse_control()    
 
 
 # Put eye tracker to sleep
 # Triggered via Karabiner Elements via: `Tab + Left Command + Backspace`
 # ---------------------------------------------------------------------
-key(cmd-ctrl-alt-backspace):
-    user.put_eye_tracker_to_sleep()
+#key(cmd-ctrl-alt-backspace):
+#    user.put_eye_tracker_to_sleep()

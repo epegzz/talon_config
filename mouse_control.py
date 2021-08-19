@@ -20,9 +20,9 @@ class Actions:
         global mouse_control_active
         global eye_tracker_sleep_timer_delay
 
-        schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
+        #schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
 
-        eye_zoom_mouse.toggle_zoom_mouse(True)
+        eye_zoom_mouse.toggle_zoom_mouse(True) # This will keep Tobii running
         if (not mouse_control_active):
             toggle_control(not config.control_mouse)
             mouse_control_active = True
@@ -32,7 +32,7 @@ class Actions:
         global mouse_control_active
         global eye_tracker_sleep_timer_delay
 
-        schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
+        #schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
 
         if (mouse_control_active):
             toggle_control(False)
@@ -42,15 +42,15 @@ class Actions:
         """Moves the mouse to where you are currently looking at"""
         global eye_tracker_sleep_timer_delay
 
-        schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
+        #schedule_putting_eye_tracker_to_sleep(eye_tracker_sleep_timer_delay)
 
         toggle_control(True)
         actions.sleep("100ms")
         toggle_control(False)
 
-    def put_eye_tracker_to_sleep():
+    def xput_eye_tracker_to_sleep():
         """Puts eye tracker to sleep"""
-        schedule_putting_eye_tracker_to_sleep()
+        #schedule_putting_eye_tracker_to_sleep()
  
 
 def schedule_putting_eye_tracker_to_sleep(seconds=0.):
@@ -75,7 +75,6 @@ def schedule_putting_eye_tracker_to_sleep(seconds=0.):
     put_eye_tracker_to_sleep_timer = Timer()
     put_eye_tracker_to_sleep_timer.setTimeout(doIt, seconds)
  
-
 def delay(delay=0.):
     """
     Decorator delaying the execution of a function for a while.
